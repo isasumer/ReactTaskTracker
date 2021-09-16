@@ -18,7 +18,7 @@ function App() {
 
   //  Delete Task
   const onDelete = (deletedItemID) =>
-    setTasks(tasks.filter((task) => task.id === !deletedItemID));
+    setTasks(tasks.filter((task) => task.id !== deletedItemID));
 
   //  Toggle Done
 
